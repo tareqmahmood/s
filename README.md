@@ -1,2 +1,2 @@
 # s
-Accessible shell scripts of installation of various utilities
+Accessible shell scripts for installation of various utilities
