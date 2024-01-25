@@ -1,0 +1,22 @@
+name: install
+
+on:
+  deployment
+
+jobs:
+  install:
+    name: install
+    runs-on: ubuntu-22.04
+    steps:
+      - name: dependencies
+        run: sudo apt install -y curl
+      - name: zellij
+        run: curl https://tareqmahmood.github.io/s/zellij.sh | bash
+        run: which zellij
+      - name: fish
+        run: curl https://tareqmahmood.github.io/s/fish.sh | bash
+        run: which fish
+      - name: micro
+        run: curl https://tareqmahmood.github.io/s/micro.sh | bash
+        run: which micro
+      
