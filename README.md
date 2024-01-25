@@ -1,5 +1,8 @@
 # s
 
+[![install](https://github.com/tareqmahmood/s/actions/workflows/install.yml/badge.svg)](https://github.com/tareqmahmood/s/actions/workflows/install.yml) 
+[![pages-build-deployment](https://github.com/tareqmahmood/s/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/tareqmahmood/s/actions/workflows/pages/pages-build-deployment)
+
 Accessible shell scripts for installation of various utilities
 
 ## Example
