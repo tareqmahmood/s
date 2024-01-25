@@ -10,13 +10,16 @@ jobs:
     steps:
       - name: dependencies
         run: sudo apt install -y curl
-      - name: zellij
+      - name: zellij install
         run: curl https://tareqmahmood.github.io/s/zellij.sh | bash
+      - name: zellij test
         run: which zellij
-      - name: fish
+      - name: fish install
         run: curl https://tareqmahmood.github.io/s/fish.sh | bash
+      - name: fish test
         run: which fish
-      - name: micro
+      - name: micro install
         run: curl https://tareqmahmood.github.io/s/micro.sh | bash
+      - name: micro test
         run: which micro
       
