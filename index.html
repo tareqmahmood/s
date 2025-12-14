@@ -1,18 +1,19 @@
 <html>
   <body>
     <a href="https://github.com/tareqmahmood/s">Github Repository</a>
-    <h1>Scripts</h1>
+    <h1>Files</h1>
     <div id="files"></div>
   </body>
 
   <script>
+    const ignore = ['.nojekyll', 'index.html', 'README.md'];
     (async () => {
       const response = await fetch('https://api.github.com/repos/tareqmahmood/s/contents/');
       const data = await response.json();
       let htmlString = '<ul>';
       
       for (let file of data) {
-        if(file.name.endsWith('.sh'))
+        if(!ignore.includes(file))
         {
           htmlString += `<li><a href="${file.path}">${file.name}</a></li>`;
         }
